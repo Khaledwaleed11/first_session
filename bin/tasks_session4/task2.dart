@@ -6,9 +6,13 @@ class Person {
 }
 
 void main() {
-  Person person1 = Person("Ahmed", 20);
-  Person person2 = Person("Sara", 25);
+  List<Person> people = [
+    Person("Ahmed", 20),
+    Person("Sara", 25),
+    Person("Omar", 22),
+  ];
 
-  print("Person 1: ${person1.name}, Age: ${person1.age}");
-  print("Person 2: ${person2.name}, Age: ${person2.age}");
+  for (int i = 0; i < people.length; i++) {
+    print("Name: ${people[i].name}, Age: ${people[i].age}");
+  }
 }
